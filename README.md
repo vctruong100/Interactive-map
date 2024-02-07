@@ -23,8 +23,12 @@ start Django Server by running in the django folder:
 
 ### `python manage.py runserver `
 
-In the project directory, you can run:
+In the project directory, install:
+## `pip install django-cors-headers`
+## `pip install beautifulsoup4`
+## `pip install requests`
 
+Then run:
 ### `npm start`
 
 Runs the app in the development mode.\
