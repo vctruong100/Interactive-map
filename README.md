@@ -51,12 +51,3 @@ For more information on React and Django, you can refer to the [Create React App
 
 ![Interactive Map Beta Screenshot 3](https://github.com/JaylenLuc/InteractiveMap/assets/91278747/e5d55ba8-0333-4d45-928d-e8dcea3726b9)
 
-*Note: Replace the image URLs with the correct paths to the images in your repository.*
-
-## Contributing
-
-If you would like to contribute to the project or suggest improvements, please follow the standard GitHub pull request process.
-
-## License
-
-This project is provided under the terms of the MIT License.
