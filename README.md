@@ -1,93 +1,62 @@
-# InteractiveMap
-Interactive Map full stack for informatics 151. State data is web scraped from https://simple.wikipedia.org/wiki/List_of_U.S._states in the table's tbody tag. It is then parsed and put into our SQL databse with Django models where our front end sends a GET request to our request handler on start-up to receive all state data as a JSON response. onClick() prop unimplemented.
+# InteractiveMap Project for Informatics 151
 
- [Link to npm ReactJS package](https://www.npmjs.com/package/react-usa-map)
-# Pictures of beta version
-![image](https://github.com/JaylenLuc/InteractiveMap/assets/91278747/9efc6e91-d50b-4ac0-8328-92f3dfbba576)
+This full-stack Interactive Map application is a part of the coursework for Informatics 151. The application web scrapes state data from a simple Wikipedia list, parses it, and populates a SQL database using Django models. The front end initiates a GET request to our request handler upon startup to receive all state data as a JSON response. The onClick() functionality is currently unimplemented.
 
-![image](https://github.com/JaylenLuc/InteractiveMap/assets/91278747/510d72d4-c3d3-4943-9304-51df66002c45)
+## Features
 
-![image](https://github.com/JaylenLuc/InteractiveMap/assets/91278747/e5d55ba8-0333-4d45-928d-e8dcea3726b9)
+- **Web Scraping**: Automated data extraction from the Wikipedia page.
+- **Data Parsing**: Processing and structuring the scraped data.
+- **Database Integration**: Using Django models to store state data.
+- **Frontend Interaction**: Serving state data as a JSON response upon a GET request.
 
+## Usage
 
+### Prerequisites
+- Ensure you have Django installed and configured.
+- Node.js and npm must be installed on your system.
 
- # HOW TO RUN CODE ON YOUR LOCAL COMPUTER:
+### Running the Application
 
- # Getting Started with Create React App and Django
+To get the application running on your local machine, follow these steps:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+1. Start the Django server within the Django folder:
 
-## Available Scripts
+2. Install the necessary Python packages:
 
-start Django Server by running in the django folder:
+3. In the project directory, start the React application:
 
-### `python manage.py runserver `
+4. The application will open in your default web browser at `http://localhost:3000`.
 
-In the project directory, install:
-## `pip install django-cors-headers`
-## `pip install beautifulsoup4`
-## `pip install requests`
+### Installation
 
-Then run:
-### `npm start`
+Ensure that you have the following npm packages installed:
+- ReactJS for the interactive map: [react-usa-map](https://www.npmjs.com/package/react-usa-map)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Development Scripts
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- `npm start`: Runs the app in development mode at `http://localhost:3000`.
+- `npm test`: Runs the test suite in interactive watch mode.
+- `npm run build`: Builds the app for production to the `build` folder.
+- `npm run eject`: Removes the single build dependency from your project.
 
 ## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+For more information on React and Django, you can refer to the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started) and the [Django documentation](https://docs.djangoproject.com/en/3.1/).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Beta Version Screenshots
 
-### Code Splitting
+![Interactive Map Beta Screenshot 1](https://github.com/JaylenLuc/InteractiveMap/assets/91278747/9efc6e91-d50b-4ac0-8328-92f3dfbba576)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+![Interactive Map Beta Screenshot 2](https://github.com/JaylenLuc/InteractiveMap/assets/91278747/510d72d4-c3d3-4943-9304-51df66002c45)
 
-### Analyzing the Bundle Size
+![Interactive Map Beta Screenshot 3](https://github.com/JaylenLuc/InteractiveMap/assets/91278747/e5d55ba8-0333-4d45-928d-e8dcea3726b9)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+*Note: Replace the image URLs with the correct paths to the images in your repository.*
 
-### Making a Progressive Web App
+## Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+If you would like to contribute to the project or suggest improvements, please follow the standard GitHub pull request process.
 
-### Advanced Configuration
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is provided under the terms of the MIT License.
